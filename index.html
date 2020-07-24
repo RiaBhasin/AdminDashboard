@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="app.css">
+     <script src="https://kit.fontawesome.com/6b48bb4d45.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+     <title>Admin Dashboard</title>
+</head>
+<body>
+<div class="main">
+	<div class="sidebar">
+		<ul>
+			<li id="brand">
+				<i class="fas fa-book-open fa-2x"></i>
+				<h2>GyanUday</h2>
+				<p>Lorem ipsum lorem ipsum lorem ipsum</p>
+			</li>
+			<li><a href="#" style="background-color: #E9E9E9; color: indigo; border-radius: 500px; padding-right: 14px;">Dashborad</a></li>
+			<li><a href="#">My Task</a></li>
+			<li><a href="#">My Project</a></li>
+			<li><a href="#">My Wallet</a></li>
+			<li><a href="#">History Data</a></li>
+			<li><a href="#">Invoice</a></li>
+		</ul>
+	</div>
+	<div class="dashboard">
+		<div class="header">
+			<select style="width: 132px; padding:4px; border-radius:500px; background-color: #E9E9E9; font-size: 0.85rem; padding-left: 20px; color: #8B8888; border: none;"><option>All categories</option></select>
+			<input type="text" placeholder="Search" style="width: 210px; padding:4px; border-radius:500px; background-color: #E9E9E9; font-size: 0.85rem; padding-left: 15px; color: #8B8888; border: none;">
+			<span style="background-color: indigo; border-radius: 500px"><i class="fas fa-search" style="color: white; width: 30px; padding-left: 6px"></i></span>
+            <i class="fas fa-bell" style="margin-left: 420px"></i>
+            <i class="fas fa-envelope" style="margin-left: 15px"></i>
+            <img src="https://source.unsplash.com/WNoLnJo7tS8" style="width: 27px; height: 27px; margin-left: 40px; border-radius: 50%">
+            <i class="fas fa-angle-down"></i>
+		</div>
+		<div class="top">
+			<div class="statistic">
+				<p>
+					<span style="font-weight: 500; margin-right: 380px; font-size: 20px;">Statistics</span>
+					<select style="border: none;">
+						<option>2018</option>
+						<option>2019</option>
+						<option>2020</option>
+					</select>
+					<select style="border: none;">
+						<option>Month</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+					</select>
+				</p>
+				<canvas id="line-chart" width="400" height="200"></canvas>
+
+			</div>
+			<div class="earning">
+				<p style="font-weight: 500; color: black; font-size: 20px;">Earning in Month</p>
+				<div class="graph">
+					<div style="margin-left: 42px; margin-top: 36px; font-weight: 700; font-size: 30px">75%</div>
+				</div>
+				<hr style="margin-top: 30px">
+				<p>Deposit :<span>$20 147 477 373</span></p>
+				<p>Expense :<span>$54 147 477</span></p>
+				<p>Payable :<span>$803 147 477</span></p>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="monthly">
+				<p style="font-weight: 500; font-size: 20px">Monthly Sale</p>
+				<div class="monthGraph">
+					<div><i class="fas fa-arrow-up fa-3x"></i></div>
+				</div>
+				<p style="font-size: 500; color: indigo; margin-left: 180px;">75%</p>
+				<div class="meter">
+				    <span style="width: 75%"></span>
+				</div>
+				<p style="font-size: 25px; font-weight: bold; margin-left: 80px; margin-top: 15px; margin-bottom: 0;">20 54 1</p>
+				<p style="font-size: 13px; margin-left: 83px; color:#8B8888">Today Income</p>
+			</div>
+			<div class="yearly">
+				<p style="font-weight: 500; font-size: 20px">Yearly Sale</p>
+				<div class="yearGraph">
+					<div><i class="fas fa-arrow-up fa-3x"></i></div>
+				</div>
+				<p style="font-size: 500; color: limegreen; margin-left: 180px;">65%</p>
+				<div class="meter1">
+				    <span style="width: 65%"></span>
+				</div>
+				<p style="font-size: 25px; font-weight: bold; margin-left: 66px; margin-top: 15px; margin-bottom: 0;">20 54 175</p>
+				<p style="font-size: 13px; margin-left: 80px; color: #8B8888">Today Income</p>
+			</div>
+			<div class="calender">
+				<p style="font-weight: 500; font-size: 20px">Calender</p>
+				<div class="container">
+					<div style="display: flex; justify-content: space-between; align-items: center;">
+						<i class="fas fa-angle-left"></i>
+						<h5>25 July, 2020</h5>
+						<i class="fas fa-angle-right"></i>
+					</div>
+					<div class="days">
+						<ul>
+							<li>Mon</li>
+							<li>Tue</li>
+							<li>Wed</li>
+							<li>Thu</li>
+							<li>Fri</li>
+							<li>Sat</li>
+							<li>Sun</li>
+						</ul>
+					</div>
+					<div class="numbers">
+						<ul>
+							<div style="display: flex;">
+								<li>01</li>
+								<li>02</li>
+								<li>03</li>
+								<li>04</li>
+								<li>05</li>
+								<li>06</li>
+								<li>07</li>
+						</div>
+						<div style="display: flex;">
+							<li>08</li>
+							<li>09</li>
+							<li>10</li>
+							<li>11</li>
+							<li style="font-size: 22px">12</li>
+							<li style="font-size: 22px">13</li>
+							<li style="font-size: 22px">14</li>
+						</div>	
+						<div style="display: flex;">
+							<li>15</li>
+							<li>16</li>
+							<li style="font-size: 22px">17</li>
+							<li style="font-size: 22px">18</li>
+							<li style="font-size: 22px">19</li>
+							<li style="font-size: 22px">20</li>
+							<li style="font-size: 22px">21</li>
+						</div>
+						<div style="display: flex; justify-content: space-around;">
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li style="background-color: salmon">25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+						</div>	
+							<li>29</li>
+							<li>30</li>
+							<li>31</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+   <script>	
+	 var ctxL = document.getElementById("line-chart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+type: 'line',
+data: {
+labels: ["January", "February", "March", "April", "May", "June", "July"],
+datasets: [{
+label: "June",
+data: [65, 59, 80, 81, 56, 55, 40],
+backgroundColor: [
+// 'rgba(105, 0, 132, .2)',
+'rgb(75, 0, 130, .3)'
+],
+borderColor: [
+// 'rgba(200, 99, 132, .7)',
+'rgb(128, 0, 128, .7)'
+],
+borderWidth: 2
+},
+{
+label: "July",
+data: [28, 48, 40, 19, 86, 27, 90],
+backgroundColor: [
+// 'rgba(0, 137, 132, .2)',
+'rgb(50, 205, 50, .3)'
+],
+borderColor: [
+// 'rgba(0, 10, 130, .7)',
+'rgb(0, 255, 0, 0.6)'
+],
+borderWidth: 2
+}
+]
+},
+options: {
+responsive: true
+}
+});
+</script>
+</body>
+</html> 
