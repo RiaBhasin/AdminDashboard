@@ -54,6 +54,12 @@ body {
 	font-size: 4px;
 }
 
+.sidebar ul {
+	list-style: none;
+	font-size: 15px;
+	letter-spacing: 0.1rem;
+}
+
 @media (max-width: 800px) {
 	.sidebar {
 		height: 120px;
@@ -64,16 +70,11 @@ body {
 	.sidebar ul {
 		display: flex;
 		flex-direction: row;
-		font-size: 7px;
+		font-size: 10px;
 		padding: 2px;
 	}
 }
 
-.sidebar ul {
-	list-style: none;
-	font-size: 15px;
-	letter-spacing: 0.1rem;
-}
 .dashboard .header {
 	background-color: white;
 	height: 70px;
@@ -154,7 +155,7 @@ hr {
 	}
 
 	.dashboard .top .statistic {
-		width: 100%;
+		width: 95%;
 		margin: 10px;
 	}
 }
